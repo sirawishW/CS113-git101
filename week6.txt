@@ -1,0 +1,32 @@
+//--------------------------------------- Pointer -------------------------------------------//
+    //เก็บได้เเค่ค่า address เท่านั้น
+    //หากจะ assigh ค่าเพิ่มต้องทำในตัวที่ไม่มี*
+    //int *ptr = &x; //ตอนประกาศต้องมี* อยู่ฝั่งไหนก็ได้ *ptr จะ เอาค่า Address เเรกที่จองไว้มาเก็บเป็นค่าของตัวเองเเละ &xเปลี่ยนค่าไม่ได้
+    //int *arrPtr ;
+    //arrPtr = number; //assigh ค่าต้องไม่มี*  ตย.หาก address เป็น 0x00
+    //arrPtr += 3; //จะปริ้นค่าออกมาเป็น address 0x0C (Cฐาน16=12 เนื่องจาก Address จองทีละ4ช่องให้ละ index ใน array)
+    //*arrPtr += 3; //จะนำค่า index ที่ 3 มา+3 ดังนั้นค่าที่ปริ้นออกมาจะเป็น 7
+    //printf("arrPtr = %p, *arrPtr = %d\n", arrPtr, *arrPtr);
+    // for(int *ptr = number; ptr <= &number[5]; ptr++){
+    //     printf("[%p] = %d\n",ptr,*ptr);
+    // }
+    // int *ptr2 = number;
+    // for(int i =0 ;i<6 ;i++){
+    //     printf("[%p] = %d\n",ptr2+i,*(ptr2+i)); //unary operator ทำก่อน binary operator เสมอ
+    // }
+    //char input[100]; //ถ้ากำหนดค่า array เอง " "จะไม่ต้องใช้ '\0'ปิด เเต่ถ้าเป็น ' ' ต้องปิดด้วย ตย.input[count]='\0';
+    // int count = 0;
+    // char c;
+    // while((c = getchar()) !='\n'){
+    //     input[count] = c;
+    //     ++count;
+    // }
+    // input[count]='\0';
+    // for(char *cPtr = input ;*cPtr!='\0';cPtr++){
+    //     printf("%c\n"),*cPtr;
+    // }
+    char s[100];
+    int i;
+    char c;
+    scanf("%d=%c=%s",&i,&c,s);// array ไม่ต้องใส่ &
+    printf("%d--%c--%s",i,c,s);
