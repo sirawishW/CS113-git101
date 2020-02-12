@@ -1,0 +1,21 @@
+#include<stdlib.h>
+char name[20]; //เปลี่ยนขนาดไม่ได้ รับทั้งบรรทัด จนถึง/n สนใจเเค่ตำเเหน่งเเรกจนถึง/0 หมายความว่าต้องเก็บมากกว่าตัวที่ต้องการ1ตัว
+gets(name); //เอาไว้รับอินพุท
+//ถ้ารันโปรเเกรมใน msys output ไม่ตรงให้เปลี่ยนไปรันใน Windows batch เเทน
+fgets(name, 20, stdin); //ใส่ค่าเท่าไหร่ก็ได้ เเต่จะรับถึงเเค่ค่าที่กำหนดไว้(20)
+char number[20];
+int i=atoi(number); //atoi=อัลเลย์ to integer เปลี่ยนเเล้วต้องเปลี่ยนตัว%ด้วย ถ้าเเปลงไม่ได้ i จะมีค่าเป็น 0
+/*char a=getchar();                     |
+getchar(); //ดักenterไม่ให้เข้าไปในตัวเเปร    |
+char b=getchar();                       |} input 4 เเบบที่ใช้ได้ในLab
+long l = atol(number);                  |
+double d = atof(number);*/            //|
+/*int found=0;
+float isExist=0.0;
+char isOnline='\0'; คือบูลีนของtypeต่างๆ*/
+int count = 0;
+while(count<=20){
+    count++;//countก่อนเเล้ว+
+    ++count;//+ก่อนเเล้วcount ไวกว่า count++ ในบางกรณี
+    //เเต่ถ้า while(1)==while True ของ Python
+}
