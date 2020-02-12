@@ -1,0 +1,11 @@
+#include<stdio.h>
+#define s "Hello"//define อะไรก็ได้
+//ตัวเเปรที่อยู่เหนือฟังก์ชั่นเป็นตัวเเปร Global
+int main(){ //ตัวเเปรที่อยู่ในฟังก์ชั่นทั้งหมดจะเป็นตัวเเปร Local
+    //Data Type
+    unsigned long long a=4000000000; //เก็บข้อมูลได้มากที่สุด %llu
+    // unsigned ค่ามากสุดคือ 4.2พันล้าน น้อยสุดคือ 0
+    double c=20.231; // %lf
+    char b='a';//ห้ามใช้ ""
+    char r='\0';//สตริงว่าง
+    printf("%llu",a);
