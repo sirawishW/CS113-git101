@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int x =100; //ประกาศเลขฐานอื่นที่ไม่ใช่10ก็ได้
+    int q = 0144; //ฐาน8(%o)
+    int w = 0x64; //ฐาน16(%s)
+    //printf("x = %d\n",x);
+    //printf("reference of x = %lu or %p",&x); //%p(เลขฐาน16) //%lu(address ใน memory ของตัวเเปร s)
+    int number[]={1,2,3,4,5,6};
+    //int number[100]; ต้องกำหนดขนาด array เสมอ
+    //การเข้าถึง array
+    //printf("index 1 = %d", number [1]);
+    //number[1000] = 200; //สามารถเปลี่ยนเเปลงค่าใน Index ได้ตลอด
+    // printf("index 1 = %d\n",number[1000]);
+    // printf("reference of &number[1] = %p\n",&number[1000]);
+    // printf("reference of &number[0] = %p\n",&number[0]);
+    // printf("reference of number = %p\n",&number+1); //address ตัวเเปรที่เข้ามาก่อนจะมีค่ามากกว่าตัวเเปรที่เข้ามาที่หลัง
+    //ระวังการเข้าถึง address หากเป็น infinite loop อาจเข้าถึงการทำงานของ os เเละทำให้ระบบรวนได้
