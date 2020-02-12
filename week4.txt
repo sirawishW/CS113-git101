@@ -1,0 +1,26 @@
+#include<stdio.h>  
+void printName();// Function Prototype(ทำเเบบนี้เพื่อให้คอมไพเลอร์รู้ว่ามีฟังก์ชันตัวนี้อยู่ ไม่งั้นจะโดนน้องด่า)
+void main ()  
+{  
+    printf("Hello ");  
+    printName();//การเรียกใช้ Function  
+}  
+void printName()  
+{  
+    printf("Hello C");  
+}  
+
+#include<stdio.h>  
+void sum();  
+void main()  
+{  
+    printf("\nGoing to calculate the sum of two numbers:");  
+    sum();  
+}  
+void sum()  
+{  
+    int a,b;   
+    printf("\nEnter two numbers");  
+    scanf("%d %d",&a,&b);   
+    printf("The sum is %d",a+b);  
+}  
