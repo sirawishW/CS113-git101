@@ -1,0 +1,16 @@
+การใช้งาน Github เบื้องต้น
+1.สร้างโฟลเดอร์ที่จะเก็บไฟล์ไว(ตั้งชื่อให้สอดคล้อง จะได้ไม่งง)
+2.ลากโฟลเดอร์ที่ต้องการใส่เข้ามาใน VS code
+3.เปิด Terminal ของ VS code เเล้วพิมพ์คำสั่ง git init
+4.สร้างไฟล์ตามต้องการ(จะเป็นนามสกุลอะไรก็ได้)
+5.ตั้งค่าชื่อเเละอีเมลล์ด้วยคำสั่ง(กรณีเป็นเครื่องส่วนตัว)
+  git config --global user.name "ชื่อ"
+  git config --global user.email "อีเมลล์"
+6.Add ไฟล์ที่ต้องการ ด้วยคำสั่ง git add ชื่อไฟล์.นามสกุล
+7.สามารถเช็ค status ได้ด้วยคำสั่ง git status
+8.ทำ Checkpoint ด้วยคำสั่ง git commit -m "ชื่อสำหรับ Checkpoint"(ห้ามลืม -m เด็ดขาด ไม่งั้นจะ In to the unknown เข้าเเล้วออกมาไม่ได้อีกเลยเป็นงง)
+9.หากอยากทราบว่าตอนนี้มี checkpoint กี่จุดเเล้วให้ใช้คำสั่ง git log --all --decorate --oneline --graph(นิยมเรียกว่า git log a dog)
+10.เปิด github เเละสร้าง respository
+11.เชื่อม local respository โดย copy จาก Github
+12.ส่งไฟล์ไปเก็บที่ github ด้วยคำสั่ง git push -u origin master(ถ้าทำครั้งเเรกจะมีให้ใส่ username&password เเต่ครั้งต่อๆไป git push เฉยๆก็พอเเล้ว)
+13.สามารถโคลนไฟล์ที่ลงไว้ใน github ใส่เครื่องไหนก็ได้ด้วยคำสั่ง git clone <git-ลิงค์เว็ป>
