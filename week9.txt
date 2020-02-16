@@ -1,0 +1,11 @@
+การใช้งาน git part 2
+การสร้าง/สลับ branch
+-สร้าง branch ด้วยคำสั่ง git branch ชื่อ branch ที่ต้องการ (ตย. git branch week9)
+-สลับ branch ด้วยคำสั่ง git checkout ชื่อ branch ที่ต้องการไป โดยสร้าง branch นั้นก่อนไม่งั้นจะไปไม่ได้(ตย. git checkout week9)
+-สามารถเช็ค branch ที่เราอยู่ได้ด้วยคำสั่ง git branch โดยเครื่องหมาย * จะเป็นตัวชี้ว่าเราอยู่ที่ branch ไหน
+-การ push pull branch จะใช้คำสั่ง git push origin ชื่อ branch(ตย. git push origin week9)
+2.การรวม (merge) branch
+-ก่อนรวมต้องสลับไปยัง brach ปลายทางที่จะรวมเช่น git checkout master
+-จากนั้นใช้คำสั่ง git merge ชื่อ branch ที่ต้องการรวม(ตย. git merge week9)
+3.การเเก้ปัญหากรณี merge,push หรือ pull เกิด conflict
+-ตัว git จะขึ้นเมนูมาให้ 4 เมนู เลือกเมนูที่เราต้องการ หลังจากนั้น git จะทำงานต่ออัตโนมัติ
